@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-family: 'Tilt Prism', cursive;
+        }
+        h2{
+            font-family: 'Cabin', sans-serif;
+        }
+        h1,h2{
+            text-align: center;
+            padding: 12px 0;
+        
+        }
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr 1.5fr 1.5fr;
+            grid-row: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        }
+        .content{
+            text-align: center;
+            border: 2px solid black;
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 0;
+        }
+        .item1,.item2,.item3,.item4,.item5,.item6,.item7{
+            background-color: rgb(114, 114, 114);
+            font-family: 'Cabin', sans-serif !important;
+
+        }
+        .item12{
+            grid-area: 2/5/8/6;
+        }
+        .item29{
+            grid-area: 5/3/6/5;
+        }
+        .item34{
+            grid-area: 6/3/7/5;
+        }
+        .item41{
+            grid-area: 7/6/8/8;
+        }
+        .item9,.item22,.item31,.item38{
+            background-color: darkcyan;
+        }
+        .item13,.item19,.item25,.item30,.item40{
+            background-color: blueviolet;
+        }
+        .item8,.item15,.item21,.item27,.item32,.item37{
+            background-color: rgb(114, 114, 114);
+            font-family: 'Cabin', sans-serif !important;
+
+        }
+        .item10,.item18,.item23,.item33,.item41{
+            background-color: red;
+        }
+        .item11,.item16,.item28,.item34,.item39{
+            background-color: coral;
+        }
+        .item14,.item17,.item29,.item35,.item24{
+            background-color: greenyellow;
+        }
+        .item12{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .main-footer-section{
+            
+            background-color: black;
+            color: #ffffff;
+            padding: 50px;
+        }
+        .footer-section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px 0;
+            
+        }
+        .sub-code{
+            color: aqua;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>BCA SEM 2</h2>
+        <h2>Time Table</h2>
+        <div class="container">
+            <div class="item1 content">Day</div>
+            <div class="item2 content">12:00 - 12:50</div>
+            <div class="item3 content">12:50 - 01:40</div>
+            <div class="item4 content">01:40 - 02:30</div>
+            <div class="item5 content">02:30 - 03:00</div>
+            <div class="item6 content">03:00 - 04:00</div>
+            <div class="item7 content">04:00 - 05:00</div>
+            <div class="item8 content">Monday</div>
+            <div class="item9 content">A.K. Singh</div>
+            <div class="item10 content">Manish Kumar</div>
+            <div class="item11 content">Manisha Baxla</div>
+            <div class="item12 content"><p>Lunch</p></div>
+            <div class="item13 content">B. Mahto</div>
+            <div class="item14 content">S.K. Singh</div>
+            <div class="item15 content">Tuesday</div>
+            <div class="item16 content">Manisha Baxla</div>
+            <div class="item17 content">S.K. Singh</div>
+            <div class="item18 content">Manish Kumar</div>
+            <div class="item19 content">B. Mahto</div>
+            <div class="item20 content">Library</div>
+            <div class="item21 content">Wednesday</div>
+            <div class="item22 content">A.K. Singh</div>
+            <div class="item23 content">Manish Kumar</div>
+            <div class="item24 content">S.K. Singh</div>
+            <div class="item25 content">B. Mahto</div>
+            <div class="item26 content">Tutorial</div>
+            <div class="item27 content">Thrusday</div>
+            <div class="item28 content">Manisha Baxla</div>
+            <div class="item29 content">S.K. singh</div>
+            <div class="item30 content">B. Mahto</div>
+            <div class="item31 content">A.K. Singh</div>
+            <div class="item32 content">Friday</div>
+            <div class="item33 content">Manish Kumar</div>
+            <div class="item34 content">Manisha Baxla</div>
+            <div class="item35 content">S.K. singh</div>
+            <div class="item36 content">Tutorial</div>
+            <div class="item37 content">Saturday</div>
+            <div class="item38 content">A.K. Singh</div>
+            <div class="item39 content">Manisha Baxla</div>
+            <div class="item40 content">B. Mahto</div>
+            <div class="item41 content">Manish Kumar</div>
+        </div>
+        <div class="main-footer-section">
+            <h2 class="sub-code">Subject</h2>
+            <div class="footer-section">
+                <div class="footer-content">A.K. Singh</div>
+                <div class="footer-content">Environmental Science</div>
+                <div class="footer-content">BCA C2002</div>
+                <div class="footer-content">Manish Kumar</div>
+                <div class="footer-content">DBMS</div>
+                <div class="footer-content">BCA C2003</div>
+                <div class="footer-content">S.K. Singh</div>
+                <div class="footer-content">C++ </div>
+                <div class="footer-content">BCA C2004</div>
+                <div class="footer-content">Manisha Baxla</div>
+                <div class="footer-content">Logic Design</div>
+                <div class="footer-content">BCA C2005</div>
+                <div class="footer-content">B. Mahto</div>
+                <div class="footer-content">MAths</div>
+                <div class="footer-content">BCA F2001</div>
+    
+            </div>
+
+        </div>
+       
+
+</body>
+</html>
